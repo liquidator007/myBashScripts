@@ -8,7 +8,7 @@ select opt in $searchuser "QUIT"; do
 		
 		"QUIT") exit 0 ;;
 		
-		*) tar -czf $opt\_$date.tar.gz /home/$opt 2> /dev/null ;;
+		*) tar -cvzf $opt\_$date.tar.gz /home/$opt 2> /dev/null ;;
 
 	esac
 
