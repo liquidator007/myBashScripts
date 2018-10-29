@@ -15,4 +15,3 @@ mkdir /home/$grp
 chown root:$grp /home/$grp
 
 chmod 770 /home/$grp
-
