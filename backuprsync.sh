@@ -13,6 +13,6 @@ echo "############  BACKUPS INCREMENTALES CON RSYNC  ############"
 		echo "USO: $0 <origen> <destino>"
 		echo
 	else
-		rsync -abvzhP --no-whole-file --suffix=$sufijo $1 $2
-		rsync -abvvP --delete --backup-dir=$backupdir $1 $2
+		rsync -abvvzhP --no-whole-file --suffix=$sufijo --delete --backup-dir=$backupdir $1 $2
+		#rsync -abvvP --delete --backup-dir=$backupdir $1 $2
 	fi			
